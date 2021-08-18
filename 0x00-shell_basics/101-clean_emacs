@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -v "*~"
+find . -type f -iname \*~ -delete
