@@ -9,4 +9,7 @@
 
 ## Tasks
 * 0. Create a SSH RSA Key
+Create a RSA key using ssh-keygen command and share the public key in `[0-RSA_public_key.pub](./RSA_public_key.pub)`
 
+* 1. For Best School
+Write a Bash script that displays "Best School" 10 times `[1-for_best_school](./1-for_best_school)`
