@@ -3,9 +3,9 @@
 # The content of the current directory
 # In a list format
 # Where only the part of the name after the dash is displayed
-LIST=$(find "." -name "[!.]*" | sed -e "s/^.*-//")
+LIST=$(ls)
 
 for i in $LIST; do
-	echo "$i"
+	echo "$i" | cut -d '-' -f2
 done
 
