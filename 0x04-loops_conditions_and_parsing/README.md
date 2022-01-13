@@ -15,4 +15,7 @@ Create a RSA key using ssh-keygen command and share the public key in `[0-RSA_pu
 Write a Bash script that displays "Best School" 10 times using the `for` loop `[1-for_best_school](./1-for_best_school)`
 
 * 2. While Best School loop
-Write a Bash script that displays "Best School" 1o times using the `while` loop `[2-while_best_school](./2-while_best_school)`
+Write a Bash script that displays "Best School" 10 times using the `while` loop `[2-while_best_school](./2-while_best_school)`
+
+* 3. Until Best School loop
+Write a Bash script that displays "Best School" 10 times using the `until` loop `[3-until_best_school](./3-until_best_school)`
