@@ -19,3 +19,6 @@ Write a Bash script that displays "Best School" 10 times using the `while` loop 
 
 * 3. Until Best School loop
 Write a Bash script that displays "Best School" 10 times using the `until` loop `[3-until_best_school](./3-until_best_school)`
+
+* 4. If 9, say Hii
+Write a Bash script that displays "Best School" 10 times using the `while` loop `[4-9_say_hi](./4-9_say_hi)`, but for the 9th iteration display `Hi`.
