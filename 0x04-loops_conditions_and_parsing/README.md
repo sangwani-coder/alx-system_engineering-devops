@@ -43,3 +43,8 @@ Write a bash script that displays time for 12 hours and 59 minutes:
 - display minutes from 1 to 59
 `[7-clock](./7-clock)`
 
+* 8. For ls
+Write a bash script that displays:
+- The contents of the current directory
+- in a list
+- Where only the name after the first dash is displayed
