@@ -20,5 +20,12 @@ Write a Bash script that displays "Best School" 10 times using the `while` loop 
 * 3. Until Best School loop
 Write a Bash script that displays "Best School" 10 times using the `until` loop `[3-until_best_school](./3-until_best_school)`
 
-* 4. If 9, say Hii
+* 4. If 9, say Hi
 Write a Bash script that displays "Best School" 10 times using the `while` loop `[4-9_say_hi](./4-9_say_hi)`, but for the 9th iteration display `Hi`.
+
+* 5. 4 bad luck, 8 is your chance
+Write a Bash script that loops from 1 to 10 and:
+- displays `bad luck` for the 4th loop iteration
+- displays `good luck` for the 8th loop iteration
+- displays `Best School` for other iterations
+`[5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance)`

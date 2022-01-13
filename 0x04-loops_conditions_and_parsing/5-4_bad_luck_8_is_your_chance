@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script loops from 1 t0 10 and:
+# displays "bad luck" on the 4th iteration
+# displays "good luck" on the 8th iteration
+# displays "Best School" on other iterations
+a=1
+while [ "$a" -le "10" ]
+do
+	if [ "$a" == 4 ]; then
+		echo "bad luck"
+	elif [ "$a" == "8" ]; then 
+		echo "good luck"
+	else	
+		echo "Best School"
+	fi
+	((a++))
+done
