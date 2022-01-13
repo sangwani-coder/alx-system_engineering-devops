@@ -29,3 +29,10 @@ Write a Bash script that loops from 1 to 10 and:
 - displays `good luck` for the 8th loop iteration
 - displays `Best School` for other iterations
 `[5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance)`
+
+* 6. Superstitious numbers
+Write a Bash script that loops from 1 to 20 and:
+- displays `"4" and then "bad luck from China"` for the 4th loop iteration
+- displays `"9" and then "bad luck from Japan` for the 9th loop iteration
+- displays `"17" and then "bad luck from Italy"` for the 17th loop iterations
+`[6-superstitious_numbers](./6-superstitious_numbers)`
