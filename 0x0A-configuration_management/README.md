@@ -26,3 +26,8 @@ In this project I will be writing Puppet Manifests.
 [1-install_a_package.pp](./1-install_a_package.pp): Puppet manifest to install:
 * puppet-lint
 * Version 2.5.0
+
+* **2. Execute a command**
+[2-execute_A_command](./2-execute_a_command): Puppet manifest that kills a process name killmenow.
+* using the exec Puppet resource
+* using pkill command
