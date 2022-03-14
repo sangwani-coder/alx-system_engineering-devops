@@ -15,6 +15,10 @@ printf %s "server {
 	listen	[::]:80 default_server;
 	root	/etc/nginx/html;
 	index	index.html index.htm;
+	server_name _;
+	location / {
+		try_files $uri $uri/ =404;
+	}
 }
 " > /etc/nginx/sites-available/default
 
