@@ -4,7 +4,7 @@
 # Returns page containing "Hello World!"
 # at root with a curl GET request
 
-apt-get update -y
+apt-get update
 apt-get install -y nginx
 
 mkdir /etc/nginx/html
@@ -14,7 +14,7 @@ printf $s "server {
 	listen	80 default_server;
 	listen	[::]:80 default_server;
 	root	/etc/nginx/html;
-	index	index.html index.html;
+	index	index.html index.htm;
 }
 " > /etc/nginx/sites-avaiable/default
 
