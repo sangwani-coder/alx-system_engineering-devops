@@ -16,6 +16,6 @@ printf %s "server {
 	root	/etc/nginx/html;
 	index	index.html index.htm;
 }
-" > /etc/nginx/sites-avaiable/default
+" > /etc/nginx/sites-available/default
 
 service nginx restart
