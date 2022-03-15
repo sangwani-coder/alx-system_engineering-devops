@@ -5,7 +5,7 @@
 #++ at root with a curl GET request
 
 apt-get update
-apt-get install -y nginx
+apt-get install nginx -y
 
 mkdir /etc/nginx/html
 touch /etc/nginx/html/index.html
