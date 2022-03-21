@@ -30,7 +30,7 @@ defaults
    option  httplog
    option  dontlognull
 
-listen myserver
+listen hbtn
    bind 0.0.0.0:80
    mode http
    stats enable
