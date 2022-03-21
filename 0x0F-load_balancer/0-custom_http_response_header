@@ -18,7 +18,7 @@ echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
 printf %s "server {
 	listen 80;
 	listen [::]:80 default_server;
-	add_header X-Served-By $hostname;
+	add_header X-Served-By $HOSTNAME;
 	root /etc/nginx/html;
 	index index.html index.htm;
 
