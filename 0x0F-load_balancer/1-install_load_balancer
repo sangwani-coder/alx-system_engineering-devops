@@ -13,7 +13,7 @@ echo "ENABLED=1 >> /etc/default/haproxy"
 mv /etc/haproxy/haproxy.cfg{,.original}
 touch /etc/haproxy/haproxy.cfg
 
-print $s "global
+printf $s "global
 	log 127.0.0.1 loca0 notice
 	maxconn 2000
 	user haproxy
