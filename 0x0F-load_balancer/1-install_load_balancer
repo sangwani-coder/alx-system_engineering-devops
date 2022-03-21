@@ -14,7 +14,7 @@ mv /etc/haproxy/haproxy.cfg{,.original}
 touch /etc/haproxy/haproxy.cfg
 
 printf $s "global
-	log 127.0.0.1 loca0 notice
+	log 127.0.0.1 local0 notice
 	maxconn 2000
 	user haproxy
 	group haproxy
@@ -22,7 +22,7 @@ printf $s "global
 defaults
    log     global
    mode    http
-   retries 4
+   retries 3
    option  redispatch
    timeout connect 3000s
    timeout client  8000s
