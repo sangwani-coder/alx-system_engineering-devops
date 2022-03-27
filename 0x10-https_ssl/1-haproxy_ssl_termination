@@ -1,9 +1,9 @@
 global
   log      /dev/log local0
-  maxconn  2040
+  maxconn  2048
   user     haproxy
   group    haproxy
-  tune.ssl.default-dh-param 2040
+  tune.ssl.default-dh-param 2048
 
 defaults
   log      global
@@ -21,13 +21,11 @@ defaults
 frontend www-http
   bind   0.0.0.0:80
   reqadd  X-Forwarded-Proto:\ http
-  deafult_backend www-backend
+  default_backend www-backend
 
 frontend www-https
-  bind 0.0.0.0:443 ssl crt /etc/haproxy/certs/www.bdbnb.site.pem
-  reqadd  X-Forwaded-Proto:\ https
-  acl      letusencrypt-acl path_beg /.well-known/acme-challenge/
-  use_backend  letsencrypt-backend if letsencrypt-acl
+  bind *:443 ssl crt /etc/haproxy/zyambo.pem
+  reqadd  X-Forwarded-Proto:\ https
   default_backend  www-backend
 
 backend www-backend
@@ -35,6 +33,3 @@ backend www-backend
   redirect scheme https if !{ ssl_fc }
   server 1313-web-01 34.139.21.144:80 check
   server 1313-web-02 44.192.90.48:80 check
-
-backend letsencrypt-backend
-  server letsencrypt 127.0.0:54321
