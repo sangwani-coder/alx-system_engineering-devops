@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Starts the Nginx web server running on Ubuntu container.
 service nginx start
-kill "$(pgrep 'nginx | head -l)"
+kill "$(pgrep 'nginx' | head -l)"
