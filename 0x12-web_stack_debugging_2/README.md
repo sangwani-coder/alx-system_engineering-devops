@@ -6,3 +6,9 @@ The user **root** is, on Linux, the "superuser". It ca do anything it wants. Tha
 [0-iamsomeoneelse](./0-iamsomeoneelse):
 - Bash script that accepts one argument
 - runs the **whoami** command under the user passed as an argument
+
+* **1. Run Nginx as Nginx**
+[1-run_nginx_as_nginx](1-run_nginx_as_nginx): Bash script that fixes a web server to run Nginx listening on port '8080' as 'nginx' user.
+
+* **7 lines of less**
+[100-fix_in_7_lines_or_less](./100-fix_in_7_lines_or_less): Bash script that fixes a web server to run Nginx listening on port '8080' as the 'nginx' user.
