@@ -12,7 +12,7 @@ if __name__ == "__main__":
         json.dump({
             u.get("id"): [{
                 "task": t.get("title"),
-                "ompleted": t.get("completed"),
+                "completed": t.get("completed"),
                 "username": u.get("username")
             } for t in requests.get(url + "todos",
                                     params={"userId": u.get("id")}).json()]
