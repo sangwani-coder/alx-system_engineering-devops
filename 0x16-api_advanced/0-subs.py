@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-""" Queries the Reddit API for a given subreddit.
+"""
+   0-subs
+   Queries the Reddit API for a given subreddit.
     If an invalid subreddit is given, the function should return 0
 """
 
-import json
 import requests
 import sys
 
@@ -14,7 +15,7 @@ def number_of_subscribers(subreddit):
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
 
     headers = {
-            'User-Agent': 'custo-magent/0.0.1'
+            'User-Agent': 'custom-agent/0.0.1'
             }
     try:
         response = requests.request("GET",
