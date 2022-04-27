@@ -15,10 +15,15 @@ At the end of this project I will be able to:
 
 * **2. Recurse it!**
 [2-recurse.py](./2-recurse.py): Script that recursively queries the [Reddit API](https://www.reddit.com/dev/api/) and returns a list containing the titles of all hot articles for a given subreddit.
+
+* **3. Count it!**
+[100-count.py](./100-count.py): Script that recursively queries the [Reddit API](https://www.reddit.com/dev/api/) parses the tile of all hot articles, and prints a sorted count of given keywords..
+
 **Test files for:**
 * [0-subs.py](./tests/0-main.py)
 * [1-top_ten.py](./tests/1-main.py)
 * [2-recurse.py](./tests/2-main.py)
+* [100-count.py](./tests/100-main.py)
 
 ## Example usage
 $ python3 0-main.py programming
